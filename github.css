@@ -1,0 +1,13 @@
+body {
+  --fgColor-default: rgb(170,170,170);
+  --bgColor-default: black;
+}
+
+:is(article, .markdown-body) :is(h1, h2, h3, h4, h5, h6) {
+  color: #ffcb3d;
+}
+
+:is(article, .markdown-body) :is(strong, em) {
+  color: rgb(220,220,220);
+  font-weight: 500;
+}
