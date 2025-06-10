@@ -1,0 +1,84 @@
+.visual-refresh.theme-midnight {
+  --background-primary: black;
+  --background-base-lower: black;
+  --text-normal: rgb(170,170,170);
+  --font-code: "JetBrains Mono", monospace;
+  --font-code-size: 9pt;
+  --font-primary: "Segoe UI", sans-serif;
+  --font-username-size: 14px;
+  --custom-app-top-bar-height: 0px;
+}
+
+.visual-refresh div[class^="markup"] pre code {
+  background-color: rgb(5, 5, 5);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  border: none;
+  border-radius: 10px;
+  font-size: 9pt;
+}
+
+div[class^="markup"] code.inline {
+  color: #d2ad6b;
+  background-color: #131516;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-color: hsl(51 16.5% 84.5% / .15);
+}
+
+div[class^="markup"] {
+  font-size: 15px;
+}
+
+span[class^="username"]::before {
+  font-family: var(--font-code);
+  font-size: var(--font-username-size);
+  content: '<';
+}
+span[class^="username"]::after {
+  font-family: var(--font-code);
+  font-size: var(--font-username-size);
+  content: '>';
+}
+
+span[class^="username"] {
+  font-family: var(--font-code);
+  font-size: var(--font-username-size);
+  font-weight: 500;
+  color: rgb(200,200,200);
+}
+
+span[id^="message-username"]::after {
+  font-family: var(--font-code);
+  font-size: var(--font-code-size);
+  color: var(--text-normal);
+}
+
+div[id^="message-content"] a span {
+  font-family: var(--font-code);
+  font-size: 13px;
+}
+
+span[class^="emoji"], span[class^="chiplet"] {
+  display: none !important;
+}
+
+ul[class^="content"] li * {
+  font-family: var(--font-primary);
+  font-size: 10pt;
+}
+
+div[class^="animatedContainer"] {
+  display: none;
+}
+ul[class^="content"] > div:first-child {
+}
+div[class^="bar_"] {
+  display: none;
+}
+
+div[class^="repliedMessage"] {
+  color: rgb(85,85,85);
+}
