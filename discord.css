@@ -10,8 +10,8 @@
 
 :root {
   --custom-message-margin-compact-indent: var(--space-xl);
-  --font-display: "Segoe UI", sans-serif;
   --font-primary: "Segoe UI", sans-serif;
+  --font-display: var(--font-primary);
   --font-code: "JetBrains Mono", monospace;
 }
 
@@ -35,9 +35,9 @@ span[id^="message-username-"][class^="headerText_"] {
   margin-right: 0px;
 }
 
-span[class*="latin12CompactTimeStamp"][class*="timestamp_"] {
+span[class*="timestamp_"] {
   /*width: 2rem;*/
-  display: none;
+  display: none !important;
 }
 
 .visual-refresh div[class^="message"] {
