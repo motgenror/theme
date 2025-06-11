@@ -1,6 +1,6 @@
 /*
- * Should be applied on top of these base Discord settings:
- * Theme: Onyx (the black one)
+ * Base Discord settings:
+ * Theme: Onyx
  * UI Density: Compact
  * Message Spacing: Compact
  * Hide user avatars: ON
@@ -29,7 +29,8 @@ span[id^="message-username-"][class^="headerText_"] {
 }
 
 span[class*="latin12CompactTimeStamp"][class*="timestamp_"] {
-  width: 2rem;
+  /*width: 2rem;*/
+  display: none;
 }
 
 .visual-refresh div[class^="message"] {
