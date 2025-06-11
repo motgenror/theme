@@ -1,12 +1,39 @@
+/*
+ * Should be applied on top of these base Discord settings:
+ * Theme: Onyx (the black one)
+ * UI Density: Compact
+ * Message Spacing: Compact
+ * Hide user avatars: ON
+ * Space Between Message Groups: 0px
+ * Chat Font Scaling: 16px
+ */
+
+:root {
+  --custom-message-margin-compact-indent: var(--space-xl);
+  --font-display: "Segoe UI", sans-serif;
+  --font-primary: "Segoe UI", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+}
+
 .visual-refresh.theme-midnight {
   --background-primary: black;
   --background-base-lower: black;
   --text-normal: rgb(170,170,170);
-  --font-code: "JetBrains Mono", monospace;
   --font-code-size: 9pt;
-  --font-primary: "Segoe UI", sans-serif;
-  --font-username-size: 14px;
+  --font-username-size: 10pt;
   --custom-app-top-bar-height: 0px;
+}
+
+span[id^="message-username-"][class^="headerText_"] {
+  margin-right: 0px;
+}
+
+span[class*="latin12CompactTimeStamp"][class*="timestamp_"] {
+  width: 2rem;
+}
+
+.visual-refresh div[class^="message"] {
+  padding-right: var(--custom-message-margin-compact-indent);
 }
 
 .visual-refresh div[class^="markup"] pre code {
@@ -81,4 +108,8 @@ div[class^="bar_"] {
 
 div[class^="repliedMessage"] {
   color: rgb(85,85,85);
+}
+
+div[class^="compact"] div[class^="contents"] {
+  
 }
