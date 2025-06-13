@@ -17,10 +17,11 @@ body {
 }
 
 code, pre {
-    font-family: var(--my-fontcode) !important;
+  font-family: var(--my-fontcode) !important;
+  font-size: 9pt;
 }
 
-code:not(:has(> span)) {
+:not(pre) > code:not(:has(span)) {
   border: var(--my-inlinecode-border);
   border-radius: var(--my-inlinecode-border-radius);
 }
