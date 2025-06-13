@@ -1,3 +1,9 @@
+body {
+  --bg-primary: black;
+  --text-primary: rgb(170,170,170);  
+  --text-secondary: var(--text-primary);
+}
+
 /* Wider chat window */
 .xl\:max-w-\[48rem\], .max-w-\[80\%\] {
     max-width: 100%;
@@ -32,8 +38,6 @@ code:not(:has(> span)) {
     --main-surface-tertiary: black;
     --main-surface-selected: black;
    
-    --text-primary: rgb(170,170,170);
-    --text-secondary: var(--text-primary);
     /*--text-tertiary: */
     /*--text-quaternary: */
    
