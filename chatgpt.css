@@ -1,6 +1,6 @@
 body {
-  --bg-primary: black;
-  --text-primary: rgb(170,170,170);  
+  --bg-primary: var(--my-bg);
+  --text-primary: var(--my-text);
   --text-secondary: var(--text-primary);
 }
 
@@ -17,26 +17,25 @@ body {
 }
 
 code, pre {
-    font-family: "JetBrains Mono" !important;
+    font-family: var(--my-fontcode) !important;
 }
 
 code:not(:has(> span)) {
-  border-width: .5px;
-  border-color: hsl(51 16.5% 84.5% / .15);
-  border-radius: .4rem;
+  border: var(--my-inlinecode-border);
+  border-radius: var(--my-inlinecode-border-radius);
 }
 
 .cm-editor * {
     font-size: 9pt;
-    font-family: "JetBrains Mono" !important;
+    font-family: var(--my-fontcode) !important;
 }
 
 .dark {
-    --main-surface-background: black;
-    --main-surface-primary: black;
-    --main-surface-secondary: black;
-    --main-surface-tertiary: black;
-    --main-surface-selected: black;
+    --main-surface-background: var(--my-bg);
+    --main-surface-primary: var(--my-bg);
+    --main-surface-secondary: var(--my-bg);
+    --main-surface-tertiary: var(--my-bg);
+    --main-surface-selected: var(--my-bg);
    
     /*--text-tertiary: */
     /*--text-quaternary: */
@@ -45,30 +44,25 @@ code:not(:has(> span)) {
 }
 
 .prose {
-  --tw-prose-body: rgb(170,170,170);
+  --tw-prose-body: var(--my-text);
 }
 
 .dark\:prose-invert:is(.dark *) :where(code):not(:where([class~="not-prose"] *)) {
-    color: #d2ad6b;
-    background-color: #131516;
+    color: var(--my-inlinecode-color);
+    background-color: var(--my-inlinecode-bg);
 }
 
 .prose strong:not(:is(h1,h2,h3,h4) strong) {
     /*color: #28b463;*/
-    color: rgb(220,220,220);
+    color: var(--my-strong);
 }
 
 .prose :is(h1,h2,h3,h4) strong {
-    color: #ffcb3d;
+    color: var(--my-heading);
 }
 
 .prose :is(h1,h2,h3,h4,h5,h6) {
-    color: #ffcb3d;
-}
-
-.dark {
-    --class: #ff99ff;
-    --kw: #9999ff;
+    color: var(--my-heading);
 }
 
 .dark code[class*="language-"] {
@@ -76,15 +70,15 @@ code:not(:has(> span)) {
 }
 
 .dark .hljs-title.class_, .dark .hljs-type {
-    color: var(--class);
+    color: var(--my-high-type);
 }
 
 .dark .hljs-keyword {
-    color: var(--kw);
+    color: var(--my-high-kw);
 }
 
 .dark .hljs-number, .dark .hljs-string {
-    color: #ffcc66;
+    color: var(--my-high-string);
 }
 
 .dark .hljs-title.function_.invoke__ {
@@ -100,21 +94,21 @@ code:not(:has(> span)) {
 }
 
 :is(.light .dark,.dark) code[class*="language-"] {
-  color: rgb(170,170,170);
+  color: var(--my-text);
 }
 
 section.popover,
 .bg-token-sidebar-surface-primary,
 .dark\:prose-invert:is(.dark *) :where(code):not(:where([class~="not-prose"] *))
 {
-  background-color: rgb(5, 5, 5);
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-blend-mode: overlay;
+  background-color: var(--my-panel-bgcolor);
+  background-image: var(--my-panel-bgimage);
+  background-blend-mode: var(--my-panel-bgblend);
 }
 
 a {
-  color: rgb(170,170,170);
+  color: var(--my-text);
 }
 aside h2 {
-  color: #ffcb3d;
+  color: var(--my-heading);
 }
