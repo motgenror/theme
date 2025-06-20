@@ -1,0 +1,20 @@
+.theme-dark {
+  --background-primary: black;
+  --text-normal: rgb(170,170,170);
+  --h1-color: #ffcb3d;
+  --h2-color: var(--h1-color);
+  --h3-color: var(--h1-color);
+  --h4-color: var(--h1-color);
+  --h5-color: var(--h1-color);
+  --h6-color: var(--h1-color);
+  --h1-font: "Fira Sans";
+  --h2-font: var(--h1-font);
+  --h3-font: var(--h1-font);
+  --h4-font: var(--h1-font);
+  --h5-font: var(--h1-font);
+  --h6-font: var(--h1-font);
+  --bold-color: rgb(220,220,220);
+  --blockquote-border-color: rgb(85,85,85);
+  --table-background: rgb(12,12,12);
+  --table-border-color: rgb(48,48,48);
+}
