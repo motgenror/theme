@@ -13,6 +13,7 @@
   --font-primary: "Segoe UI", sans-serif;
   --font-display: var(--font-primary);
   --font-code: "JetBrains Mono", monospace;
+  --text-default: var(--my-text);
 }
 
 .visual-refresh.theme-midnight {
