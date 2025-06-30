@@ -87,7 +87,7 @@ span[class^="username"] {
   font-family: var(--font-code);
   font-size: var(--font-username-size);
   font-weight: 500;
-  color: rgb(200,200,200);
+  color: #968165;
 }
 
 span[id^="message-username"]::after {
