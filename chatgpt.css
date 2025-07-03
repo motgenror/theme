@@ -4,6 +4,10 @@ body {
   --text-secondary: var(--text-primary);
 }
 
+header.bg-token-main-surface-primary {
+  background: none;
+}
+
 /* Wider chat window */
 .xl\:max-w-\[48rem\], .max-w-\[80\%\] {
     max-width: 100%;
@@ -64,6 +68,7 @@ code, pre {
 
 .prose :is(h1,h2,h3,h4,h5,h6) {
     color: var(--my-heading);
+    font-family: var(--my-fontheading);
 }
 
 .dark code[class*="language-"] {
@@ -100,7 +105,8 @@ code, pre {
 
 section.popover,
 .bg-token-sidebar-surface-primary,
-.dark\:prose-invert:is(.dark *) :where(code):not(:where([class~="not-prose"] *))
+.dark\:prose-invert:is(.dark *) :where(code):not(:where([class~="not-prose"] *)),
+.bg-token-main-surface-primary
 {
   background-color: var(--my-panel-bgcolor);
   background-image: var(--my-panel-bgimage);
