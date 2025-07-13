@@ -51,6 +51,10 @@
   padding-right: 1rem !important;
 }
 
-.border-card-border.bg-foreground {
+.border-card-border.bg-foreground, .bg-surface-l2 {
   background: var(--my-panel-bgcolor);
+}
+
+.text-fg-primary {
+  color: var(--my-text);
 }
