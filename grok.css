@@ -11,7 +11,7 @@
   --font-ibm-plex-mono: var(--my-fontcode);
   --surface-inset: var(--my-panel-bgcolor);
   
-  -gutter-width: 0;
+  --gutter-content: 0;
   --context-max-width: 100%;
 }
 
@@ -47,8 +47,6 @@
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  padding-left: 1rem !important; /* Optional: Adds minimal padding for edge readability; adjust as needed */
-  padding-right: 1rem !important;
 }
 
 .border-card-border.bg-foreground, .bg-surface-l2 {
