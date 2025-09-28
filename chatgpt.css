@@ -2,6 +2,7 @@ body {
   --bg-primary: var(--my-bg);
   --text-primary: var(--my-text);
   --text-secondary: var(--text-primary);
+  --theme-user-msg-text: var(--my-text);
 }
 
 header.bg-token-main-surface-primary {
@@ -118,4 +119,8 @@ a {
 }
 aside h2 {
   color: var(--my-heading);
+}
+
+.text-base li::marker {
+    color: var(--my-bullet);
 }
