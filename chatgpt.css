@@ -3,6 +3,7 @@ body {
   --text-primary: var(--my-text);
   --text-secondary: var(--text-primary);
   --theme-user-msg-text: var(--my-text);
+  --theme-user-msg-bg: #151515;
 }
 
 header.bg-token-main-surface-primary {
