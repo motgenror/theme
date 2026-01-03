@@ -1,0 +1,32 @@
+{
+  "buffer_font_weight": 400.0,
+  "buffer_font_family": "JetBrains Mono",
+  "disable_ai": true,
+  "base_keymap": "JetBrains",
+  "ui_font_size": 16,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Ayu Dark",
+  },
+  "theme_overrides": {
+    "Ayu Dark": {
+      "editor.background": "#000",
+      "editor.foreground": "#aaaaaa",
+      "syntax": {
+        "title": { "color": "#ffcb3d" },
+        "punctuation.markup": { "color": "#454545" },
+        "emphasis": { "font_style": "italic", "color": "#aaaaaa" },
+        "emphasis.strong": { "color": "#dcdcdc" },
+        "text.literal": { "color": "#00AAAA" },
+        "keyword": { "color": "#9999ff" },
+        "number": { "color": "#ffcc66" },
+        "string": { "color": "#ffcc66" },
+        "type": { "color": "#ff99ff" },
+        "property": { "color": "#008080" },
+        "operator": { "color": "#aaaaaa" },
+      },
+    },
+  },
+}
