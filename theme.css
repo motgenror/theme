@@ -10,10 +10,7 @@
   --my-font: "Roboto";
   --my-fontcode: "JetBrains Mono";
   --my-fontheading: "Fira Sans";
-  --my-inlinecode-color: #d2ad6b;
-  --my-inlinecode-bg: #131516;
-  --my-inlinecode-border: .5px solid hsl(51 16.5% 84.5% / .15);
-  --my-inlinecode-border-radius: .4rem;
+  --my-inlinecode-color: #00AAAA;
   --my-high-string: #ffcc66;
   --my-high-kw: #9999ff;
   --my-high-type: #ff99ff;
