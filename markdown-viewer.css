@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  color: #aaaaaa;
+  font-family: "Roboto";
+  line-height: 120%;
+}
+
+thead th, h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans";
+  color: #ffcb3d;
+}
+
+thead th {
+  background: #252525;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+tbody td {
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+tbody tr:hover, tbody tr:hover * {
+  background: #2d2e2f;
+}
+
+code, pre, tt {
+  font-family: "JetBrains Mono";
+  font-size: smaller;
+  color: #00AAAA;
+}
+
+strong, b {
+   color: rgb(220,220,220);
+}
+
+/* Reset top-level counter */
+body {
+  counter-reset: h1;
+}
+
+/* Reset top-level counter */
+body {
+  counter-reset: h1;
+}
+
+h1::before {
+  counter-increment: h1;
+  counter-reset: h2;
+  content: counter(h1) " ";
+}
+
+h2::before {
+  counter-increment: h2;
+  counter-reset: h3;
+  content: counter(h1) "." counter(h2) " ";
+}
+
+h3::before {
+  counter-increment: h3;
+  counter-reset: h4;
+  content: counter(h1) "." counter(h2) "." counter(h3) " ";
+}
+
+h4::before {
+  counter-increment: h4;
+  counter-reset: h5;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";
+}
+
+h5::before {
+  counter-increment: h5;
+  counter-reset: h6;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";
+}
+
+h6::before {
+  counter-increment: h6;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";
+}
+
+/* Optional spacing tweak */
+h1, h2, h3, h4, h5, h6 {
+  padding-left: 0.2em;
+}
+
+li::marker {
+  color: #454545;
+}
