@@ -58,8 +58,8 @@ span[class*="timestamp_"] {
   font-size: 9pt;
 }
 
-div[class^="markup"] code.inline {
-  color: #d2ad6b;
+div[id^="message-content"] code.inline {
+  color: var(--my-inlinecode-color);
   background-color: #131516;
   padding-left: .25rem;
   padding-right: .25rem;
