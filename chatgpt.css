@@ -27,11 +27,6 @@ code, pre {
   font-size: 9pt;
 }
 
-:not(pre) > code:not(:has(span)) {
-  border: var(--my-inlinecode-border);
-  border-radius: var(--my-inlinecode-border-radius);
-}
-
 .cm-editor * {
     font-size: 9pt;
     font-family: var(--my-fontcode) !important;
@@ -56,7 +51,6 @@ code, pre {
 
 .dark\:prose-invert:is(.dark *) :where(code):not(:where([class~="not-prose"] *)) {
     color: var(--my-inlinecode-color);
-    background-color: var(--my-inlinecode-bg);
 }
 
 .prose strong:not(:is(h1,h2,h3,h4) strong) {
@@ -124,4 +118,9 @@ aside h2 {
 
 .text-base li::marker {
     color: var(--my-bullet);
+}
+
+.markdown-new-styling :is(.markdown:where(:not(:has(.no-globals))) hr) {
+    margin-block: .5em;
+    border-top-width: 0;
 }
